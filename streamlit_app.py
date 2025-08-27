@@ -30,7 +30,7 @@ if "chat_session" not in st.session_state:
     gemini_response = st.session_state.chat_session.send_message(start_message)
 
 # Display the chatbot's title on the page
-st.title("🤖 Sorry Kanchan")
+st.title("🤖 Hey Handsome")
 
 # Display the chat history
 for idx, message in enumerate(st.session_state.chat_session.history):
