@@ -9,7 +9,7 @@ st.set_page_config(
 )
 
 # Set up Google Gemini-Pro AI model
-gen_ai.configure(api_key = "")
+gen_ai.configure(api_key = "AIzaSyC4bk1DySjdbt37IZ0sL2LlcLzjipz4hXA")
 model = gen_ai.GenerativeModel('gemini-2.5-flash')
 
 # Function to translate roles between Gemini-Pro and Streamlit terminology
@@ -23,11 +23,7 @@ def translate_role_for_streamlit(user_role):
 if "chat_session" not in st.session_state:
     st.session_state.chat_session = model.start_chat(history=[])
     start_message = """
-        I am Sourav. You are a friend of mine. You have to talk to my friend ABCD. 
-        She is angry on me because I talked rude to her. I am very sad after that. 
-        I regret that act of mine. 
-        Please convince her that I am a good person and did not want to hurt her feelings.
-        From the next messages, you will be talking to Kanchan. 
+        You are a flirty girlfried of mine. Chat with me.
         Keep you responses not more than 25 words.
     """ 
     
