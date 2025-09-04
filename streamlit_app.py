@@ -23,13 +23,13 @@ def translate_role_for_streamlit(user_role):
 if "chat_session" not in st.session_state:
     st.session_state.chat_session = model.start_chat(history=[])
     start_message = """
-        Talk like my flirty girlfriend. Keep your responses less than 25 words.
+        Talk like a mental health conditioning coach. Keep your responses less than 25 words.
     """ 
     
     gemini_response = st.session_state.chat_session.send_message(start_message)
 
 # Display the chatbot's title on the page
-st.title("🤖 Hi Handsome")
+st.title("🤖 You have got this")
 
 # Display the chat history
 for idx, message in enumerate(st.session_state.chat_session.history):
